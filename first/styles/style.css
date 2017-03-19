@@ -15,10 +15,23 @@ body {
 	padding: 0;
 }
 
+ul, li {
+	list-style-type: none;
+}
+
+.wrapper {
+	width: 100%;
+	padding: 1.3em 2em 0.2em 2em;
+	font-size: 1.1em;
+}
+
 img {
 	max-width: 100%;
 }
-
+.img-fll {
+	float: left;
+	padding: 0 0.3em 0.3em 0;
+}
 pre {
 	display: inline-block;
 	margin: 1px;
@@ -29,7 +42,13 @@ pre {
 	border-radius: 3px;
 }
 
-.header {
-	widows: 100%;
-	background-color: #333;
+header {
+    width: 100%;
+    background-color: #9b9bff;
+    padding: 2em 2em 0.2em 2em;
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
 }

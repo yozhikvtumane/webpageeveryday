@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>First Page</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<header class="center">
+		<h1>Check your screen resolution</h1>
+		<p></p>
+	</header>
+	<div class="wrapper center">
+		<h2>What is your screen resoution?</h2>
+		<h3>Simple tool to check resolution of your device</h3>
+		<p id="resOutput"></p>
+	</div>
+	<script>
+		var wid = screen.width;
+		var hei = screen.height;
+		var res;
+
+		res = document.getElementById('resOutput');
+		res.innerHTML = wid + " x " + hei;
+	</script>
+</body>
+</html>

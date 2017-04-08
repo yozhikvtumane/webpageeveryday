@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider test</title>
+</head>
+<body>
+
+	<header>
+		<h1>Simple Slider</h1>
+	</header>
+	<p>
+		<img name="slider" width="400" height="400">
+	</p>
+	<script>
+		var i = 0; //Start Point
+		var imgs = [];
+		var time = 3000;
+
+		//Images list
+		imgs[0] = 'image1.jpg';
+		imgs[1] = 'image2.jpg';
+		imgs[2] = 'image3.jpg';
+		imgs[3] = 'image4.jpg';
+
+		//Change Image
+		function changeImg() {
+			document.slider.src = imgs[i];
+
+			if ( i < imgs.length - 1) {
+				i++;
+			} else {
+				i = 0;
+			}
+
+			setTimeout("changeImg()" , time);
+
+		}
+
+		window.ready = changeImg();
+	</script>
+
+</body>
+</html>
